@@ -3,8 +3,6 @@ let context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let W = 600, H = 400;
-let points = []
 H = window.innerHeight;
 W = window.innerWidth;
 
@@ -36,10 +34,9 @@ function calculateT(c){
 
 function rainbow(n) {
     n = n * 240 / 255;
-    //return 'hsl(' + n + ',100%,50%)';
     var r = Math.round(Math.sin(n) * 255);
     var g = Math.round(Math.cos(n) * 255);
-    var b = Math.round(Math.sin(n) * 255);
+    var b = Math.round(Math.cos(n) * 255);
     return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
