@@ -16,7 +16,6 @@ function scalePoint(point){
 function calculateT(c){
     let t = 0;
     let point = scalePoint(c);
-    console.log(c,point)
     let x0=point[0], y0=point[1]; 
     let max_iteration = 255;
     let x=0,y=0;
