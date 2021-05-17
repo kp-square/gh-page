@@ -32,20 +32,20 @@ function calculateT(c){
     return t;
 }
 
-function rainbow(n) {
+function rainbow(n,e) {
     n = n * 240 / 255;
-    var r = Math.round(Math.sin(n) * 255);
+    var r = Math.round(Math.tan(n*e) * 255);
     var g = Math.round(Math.cos(n) * 255);
-    var b = Math.round(Math.cos(n) * 255);
+    var b = Math.round(Math.sin(n*(1-e)) * 255);
     return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
 
-function renderPoint(point){
+function renderPoint(point,e){
     let t = calculateT(point);
     let x = point[0],
         y = point[1];
-    let color = rainbow(t)
+    let color = rainbow(t,e)
     context.beginPath();
     context.moveTo(x,y);
     context.lineTo(x+4,y+4);
@@ -55,9 +55,10 @@ function renderPoint(point){
 }
 
 function renderMandelbrot(){
+    let e = Math.random();
     for(let i=0;i<W;i++){
         for(let j=0;j<H;j++){
-            renderPoint([i,j]);
+            renderPoint([i,j],e);
         }
     }
 }
