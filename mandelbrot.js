@@ -6,7 +6,11 @@ canvas.height = window.innerHeight;
 H = window.innerHeight;
 W = window.innerWidth;
 
-
+if(H > W){
+    H = H+W;
+    W = H - W;
+    H = H - W;
+}
 
 function scalePoint(point){
     x=point[0]/W, y=point[1]/H;
