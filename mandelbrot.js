@@ -16,7 +16,7 @@ function calculateT(c){
     let t = 0;
     let point = scalePoint(c);
     let x0=point[0], y0=point[1]; 
-    let max_iteration = 255;
+    let max_iteration = 1000;
     let x=0,y=0;
     let x2=0, y2=0;
     do{
@@ -31,7 +31,7 @@ function calculateT(c){
 }
 
 function rainbow(n,e) {
-    n = n * 240 / 255;
+    n = n * Math.cos(e);
     var r = Math.round(Math.tan(n*e) * 255);
     var g = Math.round(Math.cos(n) * 255);
     var b = Math.round(Math.sin(n*(1-e)) * 255);
@@ -46,8 +46,8 @@ function renderPoint(point,e){
     let color = rainbow(t,e)
     context.beginPath();
     context.moveTo(x,y);
-    context.lineTo(x+4,y+4);
-    context.lineWidth = 4;
+    context.lineTo(x+1,y+1);
+    context.lineWidth = 1;
     context.strokeStyle = color;
     context.stroke();
 }
