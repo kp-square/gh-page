@@ -2,3 +2,15 @@
     display:flex;
     justify-content: center;
 }
+
+.link{
+    display:flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: large;
+    color: #0a4677;
+}

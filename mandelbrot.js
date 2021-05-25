@@ -43,7 +43,6 @@ function calculateT(c, x_range = [-2.5,1], y_range = [-1,1]){
 }
 
 function rainbow(n,e) {
-    e = 0.5
     n = n * Math.cos(e);
     var r = Math.round(Math.tan(n*e) * 255);
     var g = Math.round(Math.cos(n) * 255);
