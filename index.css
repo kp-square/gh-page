@@ -42,6 +42,7 @@ h5 {
     align-items: center;
     border-bottom: 1px solid;
     margin-bottom: 1em;
+    min-width: 270px;
 }
 
 .nav-bar ul {
