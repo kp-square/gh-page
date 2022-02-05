@@ -6,6 +6,19 @@ var scale = 1;
 var originx = 0;
 var originy = 0;
 let zoomfactor = 1;
+let max_iteration = 10000;
+let colors = [];
+
+
+function generateRandomColors(){
+    for(let i=0;i<max_iteration;i++){
+        colors.push(randomColor());
+    }
+}
+
+function randomColor(){
+    return '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+}
 
 H = window.innerHeight;
 W = window.innerWidth;
@@ -28,7 +41,6 @@ function calculateT(c, x_range = [-2.5,1], y_range = [-1,1]){
     let t = 0;
     let point = scalePoint(c, x_range, y_range);
     let x0=point[0], y0=point[1]; 
-    let max_iteration = 1000;
     let x=0,y=0;
     let x2=0, y2=0;
     do{
@@ -42,20 +54,22 @@ function calculateT(c, x_range = [-2.5,1], y_range = [-1,1]){
     return t;
 }
 
-function rainbow(n,e) {
-    n = n * Math.cos(e);
-    var r = Math.round(Math.tan(n*e) * 255);
-    var g = Math.round(Math.cos(n) * 255);
-    var b = Math.round(Math.sin(n*(1-e)) * 255);
-    return 'rgb(' + r + ',' + g + ',' + b + ')';
-}
+// function rainbow(n,e) {
+//     n = n * Math.cos(e);
+//     var r = Math.round(Math.tan(n*e) * 255);
+//     var g = Math.round(Math.cos(n) * 255);
+//     var b = Math.round(Math.sin(n*(1-e)) * 255);
+//     return 'rgb(' + r + ',' + g + ',' + b + ')';
+// }
+
+
 
 
 function renderPoint(point,e,x_range = [-2.5,1], y_range = [-1,1]){
     let t = calculateT(point, x_range, y_range);
     let x = point[0],
         y = point[1];
-    let color = rainbow(t,e)
+    let color = colors[t];
     context.beginPath();
     context.moveTo(x,y);
     context.lineTo(x+1,y+1);
@@ -72,9 +86,6 @@ function renderMandelbrot(x_range = [-2.5,1], y_range = [-1,1]){
         }
     }
 }
-
-
-renderMandelbrot();
 
 function handleMouseWheel(event){
     event.preventDefault();
@@ -100,3 +111,8 @@ function handleMouseWheel(event){
     renderMandelbrot(x_range,y_range)
   
 }
+
+
+generateRandomColors();
+console.log(colors);
+renderMandelbrot();

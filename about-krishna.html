@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Krishna Panthi</title>
+    <style>
+        p {
+            max-width: 600px;
+            padding: 2em 0em;
+        }
+        
+        .no-nav li {
+            padding: 0.5em 0em;
+        }
+        
+        img {
+            max-height: 200px;
+        }
+        
+        .personal-img {
+            display: flex;
+            justify-content: center;
+        }
+        
+        i {
+            color: rgb(19, 100, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/about-krishna.html">About Me</a>
+                </li>
+                <li>
+                    <a href="/cv-krishna.html">Resume</a>
+                </li>
+                <li>
+                    <a href="/krishna-blogs.html">Blogs</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="personal-img">
+                <span onclick="goToHome()">
+                    <img src="me.jpg" >
+                </span>
+            </div>
+            <p>
+                Hi, I am Krishna. I am 24. I live in Kathmandu, Nepal and work as a software developer. List of companies I have worked for.
+            </p>
+
+            <ul class="no-nav">
+                <li><a href="https://mutualart.com"><i>MutualArt (December 2022 - present)</i></a></li>
+                <li><a href="https://pensionpro.com"><i>Pensionpro (April 2021 - Janauary 2022)</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h5 class="alignCenter" id="copyright" onclick="goToHome()"></h5>
+
+</body>
+<script src="index.js"></script>
+
+</html>

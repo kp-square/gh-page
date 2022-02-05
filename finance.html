@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finance calculator</title>
+    <link rel="stylesheet" href="finance.css">
+</head>
+<body>
+    <form action="save" method="post" id="myForm">
+        <div>
+            <label for="amount"> Amount </label>
+            <input type="number" name="amt" id="amount">   
+        </div>
+        <div>
+            <label for="interest rate">Interest Rate</label>
+            <input type="number" name="interestRate" id="interest">
+        </div>
+        <div>
+            <label for="years">Number of years</label>
+            <input type="number" name="period" id="years">
+        </div>
+        <div>
+            <label for="tocalc">Select whatever you want to calculate?</label>
+            <select name="" id="">
+                <option value="0">Uniform Series Compound Interest</option>
+                <option value="1">Uniform Series Present Worth</option>
+                <option value="2">Sinking Fund</option>
+                <option value="3">Capital Recovery</option>
+            </select>
+        </div>
+        <button onclick="calculate(event)">calculate</button>
+    </form>
+
+    <div>
+        <span>Total : </span>
+        <span id="result"></span>
+    </div>
+    
+</body>
+<script src="finance.js"></script>
+</html>
