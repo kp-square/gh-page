@@ -39,5 +39,4 @@ function calculate(toCalculate, period, rate, annualIncrement){
             break;
     }   
 
-
 }
