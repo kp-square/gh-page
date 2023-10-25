@@ -1,7 +1,7 @@
 .row{
     display: flex;
     flex-direction: row;
-    margin-bottom: 60px;
+    margin-bottom: 3.5rem;
     align-items: stretch;
 }
 
@@ -17,17 +17,17 @@
 }
 
 .target{
-    width: 100px;
-    height: 60px;
+    width: 8rem;
+    height: 5rem;
 }
 
 .yours{
-    width: 300px;
-    height: 180px;
+    width: 25rem;
+    height: 18rem;
 }
 
 .game-container{
-    margin-top: 100px;
+    margin-top: 4rem;
 }
 
 .counter{
@@ -35,13 +35,25 @@
 }
 
 .select-color{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    margin-right: 25px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: black;
 }
+
+.color-op{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    align-items: center;
+}
+
 
 .select-color.clicked {
     animation: clickAnimation 0.3s ease;
@@ -56,5 +68,60 @@
 .colors{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.colors-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
     align-items: stretch;
+}
+
+.remove-color{
+    display: flex;
+    padding: 0 5px;
+    background-color: gray;
+    height: 0.5rem;
+    width: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.minus{
+    width: 10px;
+    height: 2px;
+    background: white;
+}
+
+
+@media screen and (max-width: 700px){
+    .colors{
+        flex-wrap: wrap;
+    }
+
+    .select-color{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        
+    }
+
+    .color-op{
+        display: flex;
+        flex-direction: row;
+        margin-right: 4rem;
+    }
+
+    .minus{
+        width: 1rem;
+        height: 3px;
+    }
+
+    .remove-color{
+        height: 1rem;
+        width: 2rem;
+    }
 }
