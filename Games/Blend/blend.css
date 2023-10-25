@@ -88,12 +88,20 @@
     justify-content: center;
     border-radius: 2px;
     cursor: pointer;
+    display: none;
 }
 
 .minus{
     width: 10px;
     height: 2px;
     background: white;
+}
+
+#reset{
+    padding: 5 10px;
+    background-color: rgb(123, 84, 11);
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 

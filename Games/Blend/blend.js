@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         selectedColors[colorToBeRemoved] -= 1;
         updateColor();
         updatePercentage();
+
+        var removeEl = parent.getElementsByClassName('remove-color');
+        if(removeEl && removeEl[0]){
+          removeEl[0].style.display = 'none';
+        }
       }
     });
   });
@@ -73,6 +78,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
       let selectedColor = getComputedStyle(this).backgroundColor;
       if (selectedColor in selectedColors) {
         selectedColors[selectedColor] += 1;
+        
+        var parent = block.parentElement;
+        var removeEl = parent.getElementsByClassName('remove-color');
+        if(removeEl && removeEl[0]){
+          removeEl[0].style.display = 'flex';
+        }
       }
 
       this.classList.add("clicked");
@@ -103,6 +114,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     count = 0;
     setCount();
     updatePercentage();
+    var removeEls = document.getElementsByClassName('remove-color');
+    Array.from(removeEls).forEach(el => el.style.display = 'none');
   }
 
   function seeIfGameIsDone(){
