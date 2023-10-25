@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   Array.from(colorBlocks).forEach((block) => {
     block.addEventListener("click", function () {
-      block.innerText = "33%";
+
+      setTimeout(() => seeIfGameIsDone(), 400);
 
       let selectedColor = getComputedStyle(this).backgroundColor;
       if (selectedColor in selectedColors) {
@@ -92,23 +93,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let resetBtn = document.getElementById("reset");
 
-  resetBtn.onclick = function () {
+  resetBtn.onclick = resetEverything;
+
+  setCount();
+
+  function resetEverything(){
     resetYourColor();
     resetColors();
     count = 0;
     setCount();
     updatePercentage();
-  };
-
-  setCount();
+  }
 
   function seeIfGameIsDone(){
     if (checkIfColorsMatched()) {
-      let x = alert("Congrats! You won.");
-      console.log("you won! --> ", x);
+      alert("Congrats! You won.");
+      resetEverything();
     } else if (count === 10) {
       alert("You Lost!");
-      return;
+      resetEverything();
     }
   }
 
