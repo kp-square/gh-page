@@ -54,16 +54,6 @@ function calculateT(c, x_range = [-2.5,1], y_range = [-1,1]){
     return t;
 }
 
-// function rainbow(n,e) {
-//     n = n * Math.cos(e);
-//     var r = Math.round(Math.tan(n*e) * 255);
-//     var g = Math.round(Math.cos(n) * 255);
-//     var b = Math.round(Math.sin(n*(1-e)) * 255);
-//     return 'rgb(' + r + ',' + g + ',' + b + ')';
-// }
-
-
-
 
 function renderPoint(point,e,x_range = [-2.5,1], y_range = [-1,1]){
     let t = calculateT(point, x_range, y_range);

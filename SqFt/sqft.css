@@ -12,6 +12,11 @@ div{
     
 }
 
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 button{
     padding:5px;
     background-color: rgb(21, 77, 106);

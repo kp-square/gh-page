@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   let ageEl = document.getElementById('age');
-  ageEl.innerText = Math.round((new Date() - new Date('1997-08-25'))/(1000*60*60*24));
+  ageEl.innerText = Math.floor((new Date() - new Date('1997-08-25'))/(1000*60*60*24));
 });
