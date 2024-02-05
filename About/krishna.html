@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
     <title>Krishna Panthi</title>
     <style>
-        p {
-            max-width: 600px;
-            padding: 2em 0em;
-        }
-        
-        .no-nav li {
-            padding: 0.5em 0em;
-        }
-        
-        img {
-            max-height: 200px;
-        }
-        
-        .personal-img {
-            display: flex;
-            justify-content: center;
-        }
-        
-        i {
-            color: rgb(19, 100, 171);
-        }
+      p {
+        max-width: 600px;
+        padding: 2em 0em;
+      }
+
+      .no-nav li {
+        padding: 0.5em 0em;
+      }
+
+      img {
+        max-height: 200px;
+      }
+
+      .personal-img {
+        display: flex;
+        justify-content: center;
+      }
+
+      i {
+        color: rgb(19, 100, 171);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div>
-        <div class="nav-bar">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-            </ul>
+      <div class="nav-bar">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="personal-img">
+          <span onclick="goToHome()" style="cursor: pointer">
+            <img class="p-img" src="me.jpg" />
+          </span>
         </div>
-        <div>
-            <div class="personal-img">
-                <span onclick="goToHome()" style="cursor: pointer">
-                    <img class="p-img" src="me.jpg" >
-                </span>
-            </div>
-            <p>
-                Greetings, dear visitor! My name is Krishna, and I'm a software developer from Kathmandu, Nepal. I grew up in the serene town of Tamghas, Gulmi.
-
-                Writing code is my profession, but my interests are varied. These include, but aren't limited to, deep thinking, a bit of overthinking, tweeting now and then, listening to captivating talks on YouTube, cooking when the mood strikes, gardening as needed, hiking with friends, and sketching occasionally. Of course, there's always coding. You'll find a mix of interesting things on my site. Happy exploring!
-            </p>
-            <p>This is the list of companies I've worked for so far</p>
-            <ul class="no-nav">
-                <li><a target="_blank" href="https://mutualart.com"><i>MutualArt (December 2022 - present)</i></a></li>
-                <li><a target="_blank" href="https://pensionpro.com"><i>Pensionpro (April 2021 - Janauary 2022)</i></a></li>
-            </ul>
-        </div>
+        <p>
+          Greetings, dear visitor! I Krishna, welcome you to my website. I'm
+          currently a Computer Science, MS student at Clemson University.
+          Formerly, I was a software developer at Mutualart. I'm originally from
+          Kathmandu, Nepal. I grew up in the serene town of Tamghas, Gulmi.
+          Writing code is my passion and my profession, but my interests are
+          varied. These include, but aren't limited to, thinking, deep thinking,
+          a bit of overthinking and tweeting about it now and then
+          <span style="font-size: 16px">&#128517;</span>
+          . Of course, there's always coding. You'll find a mix of interesting
+          things on my site. Happy exploring!
+        </p>
+        <p>This is the list of companies I've worked for so far</p>
+        <ul class="no-nav">
+          <li>
+            <a target="_blank" href="https://mutualart.com"
+              ><i>MutualArt (December 2022 - present)</i></a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://pensionpro.com"
+              ><i>Pensionpro (April 2021 - Janauary 2022)</i></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <h5 class="alignCenter" id="copyright" onclick="goToHome()"></h5>
-
-</body>
-<script src="../index.js"></script>
-
+  </body>
+  <script src="../index.js"></script>
 </html>
