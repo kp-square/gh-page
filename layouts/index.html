@@ -1,0 +1,80 @@
+{{ define "main" }}
+<div>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+
+    <h1>Hi there, 👋 it's krishna</h1>
+        <p class="intro"> Researcher | Engineer | Programmer</p>
+
+        <div class="social-links">
+          <a href="https://github.com/kp-square"><img class="link-logo" src="images/github-mark-white.png" alt=""></a>
+          <a href="https://x.com/kp_square"><img class="link-logo" src="images/logo-white.png" alt=""></a>
+          <a href="https://linkedin.com/in/krishnapanthi"><img class="link-logo" src="images/in-white.png" alt=""></a>
+          <a href="mailto:krishnapd133@gmail.com"><img class="link-logo" src="images/Gmail_Logo.png" alt=""></a>
+          <a href="https://www.youtube.com/@krishnapanthi7205"><img class="link-logo" src="images/youtube-mark.png" alt=""></a>
+          <a href="https://instagram.com/kp_square"><img class="link-logo" src="images/ig-icon.png" alt=""></a>
+
+        </div>
+
+        <h2>💼 Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-item">
+            <a class="no-style" href="http://hydro-informatics-lab.com/"
+              >Hydro Informatics Lab: Graduate Research Assistant</a
+            >
+          </div>
+          <div class="experience-item">
+            <a class="no-style" href="https://mutualart.com/"
+              >MutualArt: Software Developer</a
+            >
+          </div>
+          <div class="experience-item">
+            <a class="no-style" href="https://clamphook.com/"
+              >Clamphook: Backend Engineer (part time)</a
+            >
+          </div>
+          <div class="experience-item">
+            <a class="no-style" href="https://pensionpro.com"
+              >PensionPro: Fullstack Developer</a
+            >
+          </div>
+        </div>
+
+        <h2>🎓 Education</h2>
+        <div class="education-grid">
+          <div class="education-item">
+            <a
+              class="no-style"
+              href="https://en.wikipedia.org/wiki/Clemson_University"
+              >Clemson University: M.S. in Computer Science</a
+            >
+          </div>
+          <div class="education-item">
+            <a
+              class="no-style"
+              href="https://en.wikipedia.org/wiki/Pulchowk_Campus"
+              >Pulchowk Campus: B.E. in Computer Engineering</a
+            >
+          </div>
+        </div>
+
+        <h2>Resume</h2>
+        <div class="resume-grid">
+          <div class="document">
+            <a class="link" href="About/Krishna_Panthi_Resume.pdf"
+              >krishnapanthi.pdf</a
+            >
+          </div>
+        </div>
+    
+    <h2>Latest Posts</h2>
+    {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    <article>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        {{ .Summary }}
+    </article>
+    {{ end }}
+</div>
+{{ end }}

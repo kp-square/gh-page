@@ -1,0 +1,217 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0ff;
+    --accent-color: #00ffdd;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.logo-img {
+    width: 2.5em;
+}
+
+.link-logo{
+    height: 1em;
+    padding-right: 1em;
+}
+
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.experience-grid,
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.experience-item,
+.education-item {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item::before,
+.education-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0) 70%);
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+.experience-item:hover::before,
+.education-item:hover::before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.experience-item:hover,
+.education-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 255, 0.2);
+}
+
+.cosmic-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+
+.link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.social-links {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.no-style {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.no-style:hover{
+    color: var(--accent-color);
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
