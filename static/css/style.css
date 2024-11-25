@@ -25,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
 .logo {
@@ -214,4 +213,9 @@ h2 {
         margin-left: 0;
         margin-right: 20px;
     }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }

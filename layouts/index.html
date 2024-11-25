@@ -62,7 +62,7 @@
         <h2>Resume</h2>
         <div class="resume-grid">
           <div class="document">
-            <a class="link" href="About/Krishna_Panthi_Resume.pdf"
+            <a class="no-style" href="/pdfs/Krishna_Panthi_Resume.pdf"
               >krishnapanthi.pdf</a
             >
           </div>
@@ -71,8 +71,16 @@
     <h2>Latest Posts</h2>
     {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
     <article>
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <h5><a class="no-style" href="{{ .RelPermalink }}">{{ .Title }}</a><i><time>{{ .Date.Format "January 2, 2006" }}</time></i></h5>
+        
+        {{ .Summary }}
+    </article>
+    {{ end }}
+
+    <h2>Latest Projects</h2>
+    {{ range first 5 (where .Site.RegularPages "Section" "projects") }}
+    <article>
+        <h5><a class="no-style" href="{{ .RelPermalink }}">{{ .Title }}</a><i><time>{{ .Date.Format "January 2, 2006" }}</time></i></h5>
         {{ .Summary }}
     </article>
     {{ end }}
