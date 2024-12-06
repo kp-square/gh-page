@@ -177,6 +177,10 @@ h2 {
     color: var(--accent-color);
 }
 
+.better{
+    color: var(--accent-color);
+}
+
 @keyframes twinkle {
     0% {
         opacity: 0.5;
