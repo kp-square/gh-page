@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Krishna Panthi</title>
-    <link>http://localhost:63287/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Krishna Panthi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Dec 2024 23:07:10 -0500</lastBuildDate>
-    <atom:link href="http://localhost:63287/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gaussian Shading With EDICT</title>
-      <link>http://localhost:63287/projects/gaussian-shading-with-edict/</link>
+      <link>http://localhost:1313/projects/gaussian-shading-with-edict/</link>
       <pubDate>Wed, 04 Dec 2024 23:07:10 -0500</pubDate>
-      <guid>http://localhost:63287/projects/gaussian-shading-with-edict/</guid>
+      <guid>http://localhost:1313/projects/gaussian-shading-with-edict/</guid>
       <description>In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) with the Gaussian Shading watermarking technique in diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt &amp;amp; Pepper Noise. For more details, please refer to our paper.</description>
     </item>
   </channel>

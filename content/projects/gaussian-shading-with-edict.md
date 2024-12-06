@@ -1,6 +1,6 @@
 +++
 date = '2024-12-04T23:07:10-05:00'
-draft = true
+draft = false
 title = 'Gaussian Shading With EDICT'
 summary = 'In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) with the Gaussian Shading watermarking technique in diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to our paper.'
 +++
