@@ -16,7 +16,7 @@ summary = 'In this research, we implement Exact Diffusion Inversion via Coupled 
 <div style="text-align:left">
 <h2> Summary </h2>
 
-In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) [1] with the Gaussian Shading [2] watermarking technique in diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to our paper.
+In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) <a class="better" href="#ref1">[1]</a> with the Gaussian Shading <a class="better" href="#ref2">[2]</a> watermarking technique for stable diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to <a class="better" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">the paper</a>.
 <div>
 
 
@@ -43,11 +43,11 @@ In this research, we implement Exact Diffusion Inversion via Coupled Transformat
 <table width=100% color=white>
   <thead>
     <tr>
-      <th rowspan="2"> Image Manipulations </th>
-      <th colspan="2">TPR_detection</th>
-      <th colspan="2">TPR_traceability</th>
-      <th colspan="2">mean_acc (higher is better)</th>
-      <th colspan="2">std_acc (smaller is better)</th>
+      <th rowspan="2">Image Manipulations </th>
+      <th colspan="2">TPR_detection &uarr;</th>
+      <th colspan="2">TPR_traceability &uarr;</th>
+      <th colspan="2">mean_acc (higher is better) &uarr;</th>
+      <th colspan="2">std_acc (smaller is better) &darr;</th>
     </tr>
     <tr>
       <th>Default</th>
@@ -113,8 +113,8 @@ In this research, we implement Exact Diffusion Inversion via Coupled Transformat
       <td>1</td>
       <td>0.987</td>
       <td>0.987</td>
-      <td>0.031</td>
-      <td><b class='better'>0.032</b></td>
+      <td class='better'>0.031</td>
+      <td><b>0.032</b></td>
     </tr>
     <tr>
       <td><b>MedBlur (k=7)</b></td>
@@ -215,8 +215,10 @@ In this research, we implement Exact Diffusion Inversion via Coupled Transformat
 
 <div style="text-align: left">
 <h2>References</h2>
-[1]Wallace, Bram, Akash Gokul, and Nikhil Naik. "Edict: Exact diffusion inversion via coupled transformations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+<p id="ref1">[1]Wallace, Bram, Akash Gokul, and Nikhil Naik. "Edict: Exact diffusion inversion via coupled transformations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+</p>
 <br><br>
-[2]Yang, Zijin, et al. "Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
+<p id="ref2">[2]Yang, Zijin, et al. "Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
+</p>
 <div>
 {{</center>}}
