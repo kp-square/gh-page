@@ -114,7 +114,7 @@ In this research, we implement Exact Diffusion Inversion via Coupled Transformat
       <td>0.987</td>
       <td>0.987</td>
       <td class='better'>0.031</td>
-      <td><b>0.032</b></td>
+      <td>0.032</td>
     </tr>
     <tr>
       <td><b>MedBlur (k=7)</b></td>
