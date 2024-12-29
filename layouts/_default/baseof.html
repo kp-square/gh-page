@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krishna's Cosmic Portfolio</title>
@@ -9,21 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
-</head>
-<body>
-    <div class="cosmic-bg" id="starfield"></div>
-    <div class="container">
-
- {{ partial "header.html" . }}
-    <main>
-        {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer.html" . }}
-
+  </head>
+  <body>
+    <div class="cosmic-bg" id="starfield">
     </div>
-   
-</body>
-<script src="/scripts/index.js"></script>
+    <div class="container">
+      {{ partial "header.html" . }}
+      <main>{{ block "main" . }}{{ end }}</main>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+  <script src="/scripts/index.js"></script>
 </html>

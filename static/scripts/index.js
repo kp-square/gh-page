@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+
   function setCopyright() {
     let date = new Date();
     document.getElementById("copyright").innerHTML =
@@ -16,9 +17,66 @@ document.addEventListener("DOMContentLoaded", (event) => {
     ageEl.innerText = Math.floor(
       (new Date() - new Date("1997-08-25")) / (1000 * 60 * 60 * 24)
     );
+  }
+  
+  function changeTheme() {
+    let currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'light') {
+      setWhiteTheme();
+    } else {
+      setDarkTheme();
     }
-    
+  }
+  changeTheme();
 });
+
+function setTheme() {
+  let currentTheme = localStorage.getItem("theme");
+  if (currentTheme === "light") {
+    localStorage.setItem("theme", "dark");
+    setDarkTheme();
+  } else {
+    localStorage.setItem("theme", "light");
+    setWhiteTheme();
+  }
+}
+
+function setWhiteTheme() {
+  document.documentElement.style.setProperty("--bg-color", '#ffffff');
+  document.documentElement.style.setProperty("--text-color", '#121212');
+  document.documentElement.style.setProperty("--accent-color", '#121212');
+  document.documentElement.style.setProperty("--card-bg", '#ffffff');
+
+  var divsToHide = document.getElementsByClassName("dark-mode"); 
+  for (var i = 0; i < divsToHide.length; i++) {
+    divsToHide[i].style.display = "none";
+  }
+
+  var divsToHide = document.getElementsByClassName("light-mode");
+  for (var i = 0; i < divsToHide.length; i++) {
+    divsToHide[i].style.display = "unset";
+  }
+
+  colorTransition();
+}
+
+function setDarkTheme() {
+  document.documentElement.style.setProperty("--bg-color", '#121212');
+  document.documentElement.style.setProperty("--text-color", '#e0e0ff');
+  document.documentElement.style.setProperty("--accent-color", '#00ffdd');
+  document.documentElement.style.setProperty("--card-bg", 'rgba(255, 255, 255, 0.05)');
+
+  var divsToHide = document.getElementsByClassName("light-mode");
+  for (var i = 0; i < divsToHide.length; i++) {
+    divsToHide[i].style.display = "none";
+  }
+
+  var divsToHide = document.getElementsByClassName("dark-mode");
+  for (var i = 0; i < divsToHide.length; i++) {
+    divsToHide[i].style.display = "unset";
+  }
+  colorTransition();
+}
 
 function createStars() {
   const starfield = document.getElementById("starfield");
