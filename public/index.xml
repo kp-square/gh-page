@@ -6,8 +6,22 @@
     <description>Recent content on Krishna Panthi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2024 23:07:10 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 08:07:10 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quality of Life Analysis in San Antonio</title>
+      <link>http://localhost:1313/projects/quality-of-life-analysis-in-san-antonio/</link>
+      <pubDate>Thu, 02 Jan 2025 08:07:10 -0500</pubDate>
+      <guid>http://localhost:1313/projects/quality-of-life-analysis-in-san-antonio/</guid>
+      <description>In this project, we perform data analysis on 311 data to analyze the status of quanlity of life in San Antonio.</description>
+    </item>
+    <item>
+      <title>Optimized Transformer implementation in GPU</title>
+      <link>http://localhost:1313/projects/et-transformer-reproduction/</link>
+      <pubDate>Wed, 01 Jan 2025 08:07:10 -0500</pubDate>
+      <guid>http://localhost:1313/projects/et-transformer-reproduction/</guid>
+      <description>In this research, we attempt to reproduce the work done in the paper &amp;ldquo;E.T.: Re-Thinking Self-Attention for Transformer Models on GPUs&amp;rdquo;.</description>
+    </item>
     <item>
       <title>Gaussian Shading With EDICT</title>
       <link>http://localhost:1313/projects/gaussian-shading-with-edict/</link>

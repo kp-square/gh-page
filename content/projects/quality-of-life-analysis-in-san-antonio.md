@@ -1,0 +1,79 @@
++++
+date = '2025-01-02T08:07:10-05:00'
+draft = false
+title = 'Quality of Life Analysis in San Antonio'
+summary = 'In this project, we perform data analysis on 311 data to analyze the status of quanlity of life in San Antonio.'
++++
+
+{{<center>}}
+
+<div class="header" style="text-align:left">
+    <p>A collaborative project between Better Future Institute (BFI) and Clemson University</p>
+</div>
+
+<section style="text-align:left">
+    <h2>Brief Data Description</h2>
+    <p>San Antonio, located in South Texas and serving as the county seat of Bexar County, is the focus of this comprehensive study. The analysis utilizes two primary data sources:</p>
+
+    <div>
+        <p><strong>311 Customer Service Data:</strong></p>
+        <ul>
+            <li>Time period: 2023-09-01 to 2024-10-29</li>
+            <li>Coverage: 14 months (14 CSV files)</li>
+            <li>Records: 553,887</li>
+            <li>Variables: 44 columns</li>
+            <li>Geographic scope: 375 census tracts in Bexar County</li>
+        </ul>
+    </div>
+
+    <div>
+        <p><strong>Census Bureau Data (per census tract):</strong></p>
+        <ul>
+            <li>College-educated population count</li>
+            <li>Median household income</li>
+            <li>Total population</li>
+            <li>Children under 5 years</li>
+            <li>Population aged 65+</li>
+            <li>Old age dependency ratio</li>
+            <li>Child dependency ratio</li>
+            <li>Age dependency ratio</li>
+            <li>Median age</li>
+            <li>Unemployment rate</li>
+            <li>Sex ratio (males per 100 females)</li>
+            <li>Poverty rate</li>
+        </ul>
+    </div>
+</section>
+
+<section style="text-align:left">
+    <h2>Objectives</h2>
+    <ul>
+        <li>Conduct comprehensive analysis of 311 service request data with socioeconomic and demographic information</li>
+        <li>Develop predictive models for 311 report trends, including frequency, type, and location analysis</li>
+        <li>Perform combined analysis of service requests and demographics</li>
+        <li>Create stakeholder-friendly visualizations of results</li>
+    </ul>
+</section>
+
+<section style="text-align:left">
+    <h2>Conclusion</h2>
+    <p>The analysis reveals significant correlations between socioeconomic factors and 311 service request patterns in San Antonio:</p>
+
+    <div>
+        <ul>
+            <li>Higher frequency of service requests correlates with increased poverty rates, lower education levels, and reduced median incomes</li>
+            <li>Response time analysis indicates potential service delivery disparities based on income levels</li>
+            <li>Random forest modeling shows promise for response time prediction</li>
+            <li>Findings support data-driven resource allocation and service delivery improvements</li>
+        </ul>
+    </div>
+
+    <p>Further research incorporating additional data sources is recommended for a more comprehensive understanding of quality of life issues in San Antonio.</p>
+
+    <p>Full report is presented in the paper
+
+<a class="resume-link" href="/pdfs/Quality_of_life_analysis_san_antonio.pdf"> Link Here </a>.</p>
+
+</section>
+
+{{</center>}}

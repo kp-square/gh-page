@@ -16,7 +16,7 @@ summary = 'In this research, we implement Exact Diffusion Inversion via Coupled 
 <div style="text-align:left">
 <h2> Summary </h2>
 
-In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) <a class="better" href="#ref1">[1]</a> with the Gaussian Shading <a class="better" href="#ref2">[2]</a> watermarking technique for stable diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to <a class="better" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">the paper</a>.
+In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) <a class="better" href="#ref1">[1]</a> with the Gaussian Shading <a class="better" href="#ref2">[2]</a> watermarking technique for stable diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to <a class="resume-link" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">the paper.</a>
 <div>
 
 

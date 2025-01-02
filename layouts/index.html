@@ -113,7 +113,7 @@
       {{ range first 5 (where .Site.RegularPages "Section" "projects") }}
       <article>
         <h5>
-          <a class="no-style" href="{{ .RelPermalink }}">{{ .Title }}</a
+          <a class="no-style resume-link" href="{{ .RelPermalink }}">{{ .Title }}</a
           ><i><time>{{ .Date.Format "January 2, 2006" }}</time></i>
         </h5>
         {{ .Summary }}
