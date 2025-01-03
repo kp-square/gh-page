@@ -2,23 +2,52 @@
 date = '2024-12-04T23:07:10-05:00'
 draft = false
 title = 'Gaussian Shading With EDICT'
-summary = 'In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) with the Gaussian Shading watermarking technique in diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to our paper.'
+summary = 'This research implements Exact Diffusion Inversion via Coupled Transformation (EDICT) with the Gaussian Shading watermarking technique in diffusion models. The results show a slight improvement in the performance of Gaussian Shading. The implementation is tested on manipulated images after watermarking, and results in the table below shows better performance for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to our paper.'
 +++
 
 {{<center>}}
 
+<div>
 <h1>Watermarking in Diffusion Model: Gaussian Shading with Exact Diffusion Inversion via Coupled Transformations (EDICT)</h1>
 <h4>Krishna Panthi </h4>
 <i>School of Computing, Clemson University<i>
 <br>
 <i>kpanthi@clemson.edu</i>
+</div>
+<div class="paper">
+<a class="paper-link" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">Paper</a>
+
+</div>
+
+<h2>Images rendered using EDICT vs. without using EDICT with same prompts.</h2>
+<div style="text-align: center;">
+  <table>
+  <tr>
+      <td style="text-align: center;"><b>Using EDICT</b></td>
+      <td><img src="/images/projects/edict/image_edict_0.jpg" alt="Using EDICT Image 1" width="200"></td>
+      <td><img src="/images/projects/edict/image_edict_1.jpg" alt="Using EDICT Image 2" width="200"></td>
+      <td><img src="/images/projects/edict/image_edict_2.jpg" alt="Using EDICT Image 3" width="200"></td>
+      <td><img src="/images/projects/edict/image_edict_3.jpg" alt="Using EDICT Image 4" width="200"></td>
+      <td><img src="/images/projects/edict/image_edict_4.jpg" alt="Using EDICT Image 5" width="200"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><b>Not using EDICT</b></td>
+      <td><img src="/images/projects/edict/image_0.jpg" alt="No EDICT Image 1" width="200"></td>
+      <td><img src="/images/projects/edict/image_1.jpg" alt="No EDICT Image 2" width="200"></td>
+      <td><img src="/images/projects/edict/image_2.jpg" alt="No EDICT Image 3" width="200"></td>
+      <td><img src="/images/projects/edict/image_3.jpg" alt="No EDICT Image 3" width="200"></td>
+      <td><img src="/images/projects/edict/image_4.jpg" alt="No EDICT Image 3" width="200"></td>
+    </tr>
+  </table>
+  <i>Figure 1: Close inspection shows that the images generated using EDICT are of higher quality.</i>
+</div>
 
 <div style="text-align:left">
 <h2> Summary </h2>
 
-In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) <a class="better" href="#ref1">[1]</a> with the Gaussian Shading <a class="better" href="#ref2">[2]</a> watermarking technique for stable diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to <a class="resume-link" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">the paper.</a>
-<div>
+This research implements Exact Diffusion Inversion via Coupled Transformation (EDICT) <a class="better" href="#ref1">[1]</a> with the Gaussian Shading <a class="better" href="#ref2">[2]</a> watermarking technique for stable diffusion models. The results show a slight improvement in the performance of Gaussian Shading. The implementation is tested on manipulated images after watermarking, and results in the table below shows better performance for most image manipulation methods, except for ColorJitter and Salt & Pepper Noise. For more details, please refer to the paper.
 
+<div>
 
 <h2> Results </h2>
 <i>Table 1. The following table shows the results obtained by testing our method against the baseline. It demonstrates that when EDICT is used, performance improves or remains consistent across all image manipulation methods, except when brightness is increased (ColorJitter) and when Salt & Pepper noise is added.</i>
@@ -190,34 +219,12 @@ In this research, we implement Exact Diffusion Inversion via Coupled Transformat
 </ul>
 </div>
 
-<h2>Images rendered without using EDICT vs. with using EDICT with the same prompts.</h2>
-<div style="text-align: center;">
-  <table>
-    <tr>
-      <td style="text-align: center;"><b>No EDICT</b></td>
-      <td><img src="/images/projects/edict/image_0.jpg" alt="No EDICT Image 1" width="200"></td>
-      <td><img src="/images/projects/edict/image_1.jpg" alt="No EDICT Image 2" width="200"></td>
-      <td><img src="/images/projects/edict/image_2.jpg" alt="No EDICT Image 3" width="200"></td>
-      <td><img src="/images/projects/edict/image_3.jpg" alt="No EDICT Image 3" width="200"></td>
-      <td><img src="/images/projects/edict/image_4.jpg" alt="No EDICT Image 3" width="200"></td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><b>Using EDICT</b></td>
-      <td><img src="/images/projects/edict/image_edict_0.jpg" alt="Using EDICT Image 1" width="200"></td>
-      <td><img src="/images/projects/edict/image_edict_1.jpg" alt="Using EDICT Image 2" width="200"></td>
-      <td><img src="/images/projects/edict/image_edict_2.jpg" alt="Using EDICT Image 3" width="200"></td>
-      <td><img src="/images/projects/edict/image_edict_3.jpg" alt="Using EDICT Image 4" width="200"></td>
-      <td><img src="/images/projects/edict/image_edict_4.jpg" alt="Using EDICT Image 5" width="200"></td>
-    </tr>
-  </table>
-  <i>Figure 1: Upon closer inspection, we can observe that the images generated using EDICT are generally of higher quality.</i>
-</div>
 
-<div style="text-align: left">
+
+<div style="text-align: left; margin-top: 4rem;">
 <h2>References</h2>
 <p id="ref1">[1]Wallace, Bram, Akash Gokul, and Nikhil Naik. "Edict: Exact diffusion inversion via coupled transformations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 </p>
-<br><br>
 <p id="ref2">[2]Yang, Zijin, et al. "Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
 </p>
 <div>

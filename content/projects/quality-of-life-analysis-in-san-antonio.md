@@ -2,14 +2,39 @@
 date = '2025-01-02T08:07:10-05:00'
 draft = false
 title = 'Quality of Life Analysis in San Antonio'
-summary = 'In this project, we perform data analysis on 311 data to analyze the status of quanlity of life in San Antonio.'
+summary = "This project represents a collaborative effort between the Better Future Institute (BFI) of San Antonio and Clemson University. The primary dataset consisted of 311 non-emergency service requests collected over a 14-month period, which was provided to the research team. This dataset was subsequently enriched with demographic and socio-economic data for San Antonio, sourced from the U.S. Census Bureau, to facilitate a comprehensive analysis."
 +++
 
 {{<center>}}
 
-<div class="header" style="text-align:left">
-    <p>A collaborative project between Better Future Institute (BFI) and Clemson University</p>
+<div>
+<h1>Quality of Life Analysis in San Antonio</h1>
+<h4>Krishna Panthi, Micheaux Simmons, Frank Yang, AJ Garner</h4>
+<i>School of Computing, Clemson University<i>
+<br>
+<i>kpanthi@clemson.edu</i>
 </div>
+<div class="paper">
+<a class="paper-link" href="/pdfs/Quality_of_life_analysis_san_antonio.pdf">Paper</a>
+
+</div>
+
+
+<div style="text-align: center;">  
+<img src="/images/projects/san_antonio/correlation_result.jpg" alt="Heatmap" width="90%">
+<br>
+<i>Figure 1: Heatmap showing correlation between number of events reported per 1000 people and
+various demographic variables for each census tract.
+</i>
+</div>
+
+<div style="text-align:left">
+<h2> Summary </h2>
+
+This project represents a collaborative effort between the Better Future Institute (BFI) of San Antonio and Clemson University. The primary dataset consisted of 311 non-emergency service requests collected over a 14-month period, which was provided to the research team. This dataset was subsequently enriched with demographic and socio-economic data for San Antonio, sourced from the U.S. Census Bureau, to facilitate a comprehensive analysis.
+A key component of the analysis involved conducting regression analyses to examine the correlation between service request patterns and the integrated demographic and socio-economic variables. Furthermore, we implemented predictive modeling to forecast the response time for a given service request. These models incorporated various factors, including historical response times for similar requests, geographical location, date, and time of the request, amongst other relevant parameters. Read the full paper for detailed analyses.
+<div>
+
 
 <section style="text-align:left">
     <h2>Brief Data Description</h2>
@@ -46,17 +71,7 @@ summary = 'In this project, we perform data analysis on 311 data to analyze the 
 </section>
 
 <section style="text-align:left">
-    <h2>Objectives</h2>
-    <ul>
-        <li>Conduct comprehensive analysis of 311 service request data with socioeconomic and demographic information</li>
-        <li>Develop predictive models for 311 report trends, including frequency, type, and location analysis</li>
-        <li>Perform combined analysis of service requests and demographics</li>
-        <li>Create stakeholder-friendly visualizations of results</li>
-    </ul>
-</section>
-
-<section style="text-align:left">
-    <h2>Conclusion</h2>
+    <h2>Outcomes</h2>
     <p>The analysis reveals significant correlations between socioeconomic factors and 311 service request patterns in San Antonio:</p>
 
     <div>
@@ -70,9 +85,7 @@ summary = 'In this project, we perform data analysis on 311 data to analyze the 
 
     <p>Further research incorporating additional data sources is recommended for a more comprehensive understanding of quality of life issues in San Antonio.</p>
 
-    <p>Full report is presented in the paper
-
-<a class="resume-link" href="/pdfs/Quality_of_life_analysis_san_antonio.pdf"> Link Here </a>.</p>
+    <p>Detailed results and outcome are presented in the paper.
 
 </section>
 

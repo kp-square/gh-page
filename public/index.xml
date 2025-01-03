@@ -13,21 +13,21 @@
       <link>http://localhost:1313/projects/quality-of-life-analysis-in-san-antonio/</link>
       <pubDate>Thu, 02 Jan 2025 08:07:10 -0500</pubDate>
       <guid>http://localhost:1313/projects/quality-of-life-analysis-in-san-antonio/</guid>
-      <description>In this project, we perform data analysis on 311 data to analyze the status of quanlity of life in San Antonio.</description>
-    </item>
-    <item>
-      <title>Optimized Transformer implementation in GPU</title>
-      <link>http://localhost:1313/projects/et-transformer-reproduction/</link>
-      <pubDate>Wed, 01 Jan 2025 08:07:10 -0500</pubDate>
-      <guid>http://localhost:1313/projects/et-transformer-reproduction/</guid>
-      <description>In this research, we attempt to reproduce the work done in the paper &amp;ldquo;E.T.: Re-Thinking Self-Attention for Transformer Models on GPUs&amp;rdquo;.</description>
+      <description>This project represents a collaborative effort between the Better Future Institute (BFI) of San Antonio and Clemson University. The primary dataset consisted of 311 non-emergency service requests collected over a 14-month period, which was provided to the research team. This dataset was subsequently enriched with demographic and socio-economic data for San Antonio, sourced from the U.S. Census Bureau, to facilitate a comprehensive analysis.</description>
     </item>
     <item>
       <title>Gaussian Shading With EDICT</title>
       <link>http://localhost:1313/projects/gaussian-shading-with-edict/</link>
       <pubDate>Wed, 04 Dec 2024 23:07:10 -0500</pubDate>
       <guid>http://localhost:1313/projects/gaussian-shading-with-edict/</guid>
-      <description>In this research, we implement Exact Diffusion Inversion via Coupled Transformations (EDICT) with the Gaussian Shading watermarking technique in diffusion models. We observe a slight improvement in the performance of Gaussian Shading. We test the implementation on manipulated images after watermarking, and as shown in the table below, we achieve better results for most image manipulation methods, except for ColorJitter and Salt &amp;amp; Pepper Noise. For more details, please refer to our paper.</description>
+      <description>This research implements Exact Diffusion Inversion via Coupled Transformation (EDICT) with the Gaussian Shading watermarking technique in diffusion models. The results show a slight improvement in the performance of Gaussian Shading. The implementation is tested on manipulated images after watermarking, and results in the table below shows better performance for most image manipulation methods, except for ColorJitter and Salt &amp;amp; Pepper Noise. For more details, please refer to our paper.</description>
+    </item>
+    <item>
+      <title>Optimized Transformer implementation in GPU</title>
+      <link>http://localhost:1313/projects/et-transformer-reproduction/</link>
+      <pubDate>Tue, 03 Dec 2024 08:07:10 -0500</pubDate>
+      <guid>http://localhost:1313/projects/et-transformer-reproduction/</guid>
+      <description>In this research, we attempt to reproduce the work done in the paper &amp;ldquo;E.T.: Re-Thinking Self-Attention for Transformer Models on GPUs&amp;rdquo;.</description>
     </item>
     <item>
       <title>My First Blog</title>

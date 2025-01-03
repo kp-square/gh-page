@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
   function changeTheme() {
     let currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'light') {
-      setWhiteTheme();
-    } else {
+    if (currentTheme === 'dark') {
       setDarkTheme();
+    } else {
+      setWhiteTheme();
     }
   }
   changeTheme();
@@ -133,7 +133,7 @@ function colorTransition() {
       }
 
       function getColor() {
-          allcolors = ["#FF6F61", "#4b91d6", "#FF007F", "#e42d63", "#bb16ae", "#efddbb"];
+          allcolors = ["#FF6F61", "#4b91d6", "#FF007F", "#e42d63", "#bb16ae"];
           let num = getRandomInt(100) % 6
           return allcolors[num]
       }

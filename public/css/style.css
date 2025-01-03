@@ -185,6 +185,23 @@ p {
     width: 100%;
 }
 
+.paper{
+    margin: 30px 0px;
+}
+
+.paper-link{
+    color: white;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    margin-top: 30px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.paper-link:hover{
+    opacity: 0.75;
+}
+
 .theme-icon {
     text-decoration: none;
     padding: 0;

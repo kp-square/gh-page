@@ -97,8 +97,22 @@
         </div>
       </div>
 
-      <h2>Latest Posts</h2>
-      {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+      <h2>Latest Projects</h2>
+      {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+      <article>
+        <h5>
+          <a class="no-style resume-link" href="{{ .RelPermalink }}">{{ .Title }}</a
+          ><i><time>{{ .Date.Format "January 2, 2006" }}</time></i>
+        </h5>
+        {{ .Summary }}
+      </article>
+      {{ end }}
+
+    </div>
+    
+  </div>
+  <h2>Latest Blogs</h2>
+      {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
       <article>
         <h5>
           <a class="no-style" href="{{ .RelPermalink }}">{{ .Title }}</a
@@ -109,17 +123,5 @@
       </article>
       {{ end }}
 
-      <h2>Latest Projects</h2>
-      {{ range first 5 (where .Site.RegularPages "Section" "projects") }}
-      <article>
-        <h5>
-          <a class="no-style resume-link" href="{{ .RelPermalink }}">{{ .Title }}</a
-          ><i><time>{{ .Date.Format "January 2, 2006" }}</time></i>
-        </h5>
-        {{ .Summary }}
-      </article>
-      {{ end }}
-    </div>
-  </div>
 </div>
 {{ end }}
