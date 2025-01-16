@@ -15,7 +15,7 @@ summary = 'This research implements Exact Diffusion Inversion via Coupled Transf
 <i>kpanthi@clemson.edu</i>
 </div>
 <div class="paper">
-<a class="paper-link" href="/pdfs/Gaussian_Shading_with_EDICT.pdf">Paper</a>
+<a class="paper-link" href="https://arxiv.org/abs/2501.08604">Paper</a>
 
 </div>
 
