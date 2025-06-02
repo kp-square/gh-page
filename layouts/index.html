@@ -88,14 +88,15 @@
     </div>
 
     <div class="main-col main-col-2">
-      <h2>Resume</h2>
-      <div class="resume-grid">
-        <div class="document">
-          <a class="no-style resume-link" href="/pdfs/Krishna_Panthi_Resume.pdf"
-            >krishnapanthi.pdf</a
-          >
+      <h2>Documents</h2>
+        <div class="resume-grid">
+          <div class="document">
+            <a class="no-style resume-link" href="/pdfs/Krishna_Panthi.pdf">Resume</a>
+          </div>
+          <div class="document">
+            <a class="no-style resume-link" href="/pdfs/KrishnaPanthi_CV.pdf">Curriculum Vitae (CV)</a>
+          </div>
         </div>
-      </div>
 
       <h2>Latest Projects</h2>
       {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
