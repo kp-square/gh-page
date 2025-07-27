@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 26 Jul 2025 12:28:22 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>I am special</title>
-      <link>http://localhost:1313/essays/i-am-special/</link>
+      <title>We are very special!</title>
+      <link>http://localhost:1313/essays/we-are-very-special/</link>
       <pubDate>Sat, 26 Jul 2025 12:28:22 -0500</pubDate>
-      <guid>http://localhost:1313/essays/i-am-special/</guid>
-      <description>This one morning I woke up and suddenly realized how special I am!</description>
+      <guid>http://localhost:1313/essays/we-are-very-special/</guid>
+      <description>This one morning I woke up and suddenly realized how special we are!</description>
     </item>
     <item>
       <title>Quality of Life Analysis in San Antonio</title>
