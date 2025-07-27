@@ -2,7 +2,7 @@
 date    = "2025-07-26T12:28:22-05:00"
 draft   = false
 title   = "I am special"
-summary = "This one morning I woke up and suddenly realized how special I am"
+summary = "This one morning I woke up and suddenly realized how special I am!"
 +++
 
 # This one morning I woke up and suddenly realized how special I am!
