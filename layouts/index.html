@@ -112,11 +112,11 @@
     </div>
     
   </div>
-  <h2>Latest Blogs</h2>
-      {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+  <h2>Latest Essays</h2>
+      {{ range first 3 (where .Site.RegularPages "Section" "essays") }}
       <article>
         <h5>
-          <a class="no-style" href="{{ .RelPermalink }}">{{ .Title }}</a
+          <a class="no-style resume-link" href="{{ .RelPermalink }}">{{ .Title }}</a
           ><i><time>{{ .Date.Format "January 2, 2006" }}</time></i>
         </h5>
 

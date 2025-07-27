@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on Krishna Panthi</title>
+    <link>http://localhost:1313/essays/</link>
+    <description>Recent content in Essays on Krishna Panthi</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jul 2025 12:28:22 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I am special</title>
+      <link>http://localhost:1313/essays/i-am-special/</link>
+      <pubDate>Sat, 26 Jul 2025 12:28:22 -0500</pubDate>
+      <guid>http://localhost:1313/essays/i-am-special/</guid>
+      <description>This one morning I woke up and suddenly realized how special I am</description>
+    </item>
+  </channel>
+</rss>
