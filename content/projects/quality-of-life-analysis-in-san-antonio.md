@@ -16,7 +16,6 @@ summary = "This project represents a collaborative effort between the Better Fut
 </div>
 <div class="paper">
 <a class="paper-link" href="/pdfs/Quality_of_life_analysis_san_antonio.pdf">Paper</a>
-
 </div>
 
 
