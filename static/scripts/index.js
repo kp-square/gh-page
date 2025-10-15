@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
   function changeTheme() {
     let currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-      setDarkTheme();
-    } else {
+    if (currentTheme === 'white') {
       setWhiteTheme();
+    } {
+      setDarkTheme();
     }
   }
   changeTheme();
@@ -42,6 +42,7 @@ function setTheme() {
 }
 
 function setWhiteTheme() {
+  console.log('is that you?')
   document.documentElement.style.setProperty("--bg-color", '#ffffff');
   document.documentElement.style.setProperty("--text-color", '#121212');
   document.documentElement.style.setProperty("--accent-color", '#121212');
@@ -61,7 +62,7 @@ function setWhiteTheme() {
 }
 
 function setDarkTheme() {
-  document.documentElement.style.setProperty("--bg-color", '#121212');
+  document.documentElement.style.setProperty("--bg-color", '#1c202b');
   document.documentElement.style.setProperty("--text-color", '#e0e0ff');
   document.documentElement.style.setProperty("--accent-color", '#00ffdd');
   document.documentElement.style.setProperty("--card-bg", 'rgba(255, 255, 255, 0.05)');
@@ -151,4 +152,13 @@ function colorTransition() {
 
 colorTransition();
 
-createStars();
+// createStars();
+
+document.querySelectorAll('.experience-header').forEach(header => {
+    header.addEventListener('click', () => {
+      console.log('print')
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+

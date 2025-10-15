@@ -34,21 +34,49 @@
   <div class="main-cols">
     <div class="main-col main-col-1">
       <div class="title-name">
-        <h1>Krishna Panthi  <a class="theme-icon" onclick="setTheme()">
-        <span class="dark-mode material-symbols-outlined"> light_mode </span>
-        <span class="light-mode material-symbols-outlined"> dark_mode </span>
-      </a></h1>
-        <p>Kathmandu, Nepal -> Clemson, SC, USA</p>
+        <h1>
+          Krishna Panthi
+          <a class="theme-icon" onclick="setTheme()">
+            <span class="dark-mode material-symbols-outlined">
+              light_mode
+            </span>
+            <span class="light-mode material-symbols-outlined">
+              dark_mode
+            </span>
+          </a>
+        </h1>
+        <p>Clemson, SC 29631, USA</p>
       </div>
 
       
 
-      <h1>Hi there, 👋 it's krishna</h1>
-      <p class="intro">Researcher | Engineer | Programmer</p>
+      
+      <div class="intro-content">
+        <img
+          class="profile-photo"
+          src="images/krishna.webp"
+          width="250px"
+          height="250px"
+        />
+        <p>
+          Hello there, my name is Krishna Panthi. I'm a graduate student and
+          research assistant at Clemson University. I have a deep passion for
+          learning and problem-solving. I've dabbled in deep reinforcement
+          learning, computer vision, time series analysis, software development,
+          quantum computing, and high-performance computing. What I like the
+          most is writing code and producing results. The best part is I usually
+          don't care about the type of programming language used. I've written
+          code in Python, C#, JavaScript, TypeScript, C++, Java, SQL, Dart,
+          (HTML + CSS), and PHP. That being said, I have most of my experience
+          in Python, C#, JavaScript, (HTML + CSS), and SQL. With all these
+          experiences, I'm confident that I can work with any modern programming
+          language. Additionally, my friends say I've got a good sense of humor.
+        </p>
 
-      <p>I enjoy learning, building, and making people laugh.</p>
+        <p>TL;DR: I enjoy learning, building, and making people laugh.</p>
+      </div>
 
-      <p>Reach me out at</p>
+      <p>Reach me out in</p>
 
       <div class="social-links">
         <a class="dark-mode" href="https://github.com/kp-square"
@@ -74,24 +102,90 @@
       <h2>💼 Experience</h2>
       <div class="experience-grid">
         <div class="experience-item">
-          <a class="no-style" href="http://hydro-informatics-lab.com/"
-            >Graduate Research Assistant at Clemson University. I'm currently working on applying deep reinforcement learning to optimize irrigation. Previously I have worked on Timeseries analysis, numerical modeling and quantum machine learning.</a
-          >
+          <div class="experience-header">
+            <a class="no-style" href="http://hydro-informatics-lab.com/"
+              >Clemson University: Graduate Researcher </a
+            ><span class="arrow">▶</span>
+          </div>
+          <div class="experience-content">
+            <ul>
+              <li>
+                Developed AquaCrop-Richards, a new crop simulation model that
+                integrates the Richards equation AquaCrop. I wrote a numerical
+                solver for 1-D Richards Equation. It was solved using finite
+                difference method and modified Picard iteration. I also
+                implemented Anderson Acceleration to make it converge in fewer
+                Picard iterations.
+              </li>
+              <li>
+                There after, I implemented deep reinforcement learning methods
+                (PPO, DQN, SLBO) to optimize irrigation to obtain maximum profit
+                using the AquaCrop-Richards as the learning environment.
+              </li>
+              <li>
+                I was involved in implementation of HydroQuantum library to do
+                quantumm machine learning on hydrology related data. The
+                associated paper has been published on Environment Modeling and
+                Software Journal.
+              </li>
+              <li>
+                I also created the workshop materials that were presented in
+                WaterSoftHack 2025.
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="experience-item">
-          <a class="no-style" href="https://mutualart.com/"
-            >MutualArt: Full stack Developer, individual contributor.</a
-          >
+          <div class="experience-header">
+            <a class="no-style" href="https://mutualart.com/"
+              >MutualArt: Full stack Developer</a
+            >
+            <span class="arrow">▶</span>
+          </div>
+          <div class="experience-content">
+            <ul>
+              <li>
+                I was involved in development of the marking and sales platforms
+                that were used for communication with the users. I also
+                developed algorithms for matching the users with the appropriate
+                consignments.
+              </li>
+              <li>I implemented tools to track emails using pixel tracking.</li>
+              <li>
+                I was involved in containerization of the pre-built applications
+                for faster deployment. Hence, I've extensive experience with
+                Docker.
+              </li>
+              <li>
+                I got experience with multitude of technologies such as AWS,
+                GraphQL, Mixpanel, .NET, Vue.js, Vuetify, etc.
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="experience-item">
-          <a class="no-style" href="https://clamphook.com/"
-            >Clamphook: Backend Engineer (part time)</a
-          >
-        </div>
-        <div class="experience-item">
-          <a class="no-style" href="https://pensionpro.com"
-            >PensionPro: Fullstack Development.</a
-          >
+          <div class="experience-header">
+            <a class="no-style" href="https://pensionpro.com"
+              >Dolphin Dive Technology: Full Stack Developer</a
+            ><span class="arrow">▶</span>
+          </div>
+          <div class="experience-content">
+            <ul>
+              <li>
+                I was involved in development of PensionPro web. Worked as a
+                full stack developer to migrate features from PensionPro desktop
+                application to PensionPro web application.
+              </li>
+              <li>
+                Worked to build frontend components with Angular and its'
+                material design framework.
+              </li>
+              <li>
+                On the backend side, I was involved in developing API endpoints,
+                optimizing stored procedures on MS SQL Server, logging, etc.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -116,18 +210,21 @@
 
     <div class="main-col main-col-2">
       <h2>Documents</h2>
-        <div class="resume-grid">
-          
-          <div class="document">
-            <a class="no-style resume-link" href="/pdfs/KrishnaPanthi_CV.pdf">Curriculum Vitae (CV)</a>
-          </div>
+      <div class="resume-grid">
+        
+        <div class="document">
+          <a class="no-style resume-link" href="/pdfs/KrishnaPanthi_CV.pdf"
+            >Curriculum Vitae (CV)</a
+          >
         </div>
+      </div>
 
       <h2>Latest Projects</h2>
       
       <article>
         <h5>
-          <a class="no-style resume-link" href="/projects/quality-of-life-analysis-in-san-antonio/">Quality of Life Analysis in San Antonio</a
+          <a class="no-style resume-link" href="/projects/quality-of-life-analysis-in-san-antonio/"
+            >Quality of Life Analysis in San Antonio</a
           ><i><time>January 2, 2025</time></i>
         </h5>
         This project represents a collaborative effort between the Better Future Institute (BFI) of San Antonio and Clemson University. The primary dataset consisted of 311 non-emergency service requests collected over a 14-month period, which was provided to the research team. This dataset was subsequently enriched with demographic and socio-economic data for San Antonio, sourced from the U.S. Census Bureau, to facilitate a comprehensive analysis.
@@ -135,7 +232,8 @@
       
       <article>
         <h5>
-          <a class="no-style resume-link" href="/projects/gaussian-shading-with-edict/">Gaussian Shading With EDICT</a
+          <a class="no-style resume-link" href="/projects/gaussian-shading-with-edict/"
+            >Gaussian Shading With EDICT</a
           ><i><time>December 4, 2024</time></i>
         </h5>
         This research implements Exact Diffusion Inversion via Coupled Transformation (EDICT) with the Gaussian Shading watermarking technique in diffusion models. The results show a slight improvement in the performance of Gaussian Shading. The implementation is tested on manipulated images after watermarking, and results in the table below shows better performance for most image manipulation methods, except for ColorJitter and Salt &amp; Pepper Noise. For more details, please refer to our paper.
@@ -143,28 +241,26 @@
       
       <article>
         <h5>
-          <a class="no-style resume-link" href="/projects/et-transformer-reproduction/">Optimized Transformer implementation in GPU</a
+          <a class="no-style resume-link" href="/projects/et-transformer-reproduction/"
+            >Optimized Transformer implementation in GPU</a
           ><i><time>December 3, 2024</time></i>
         </h5>
         In this research, we attempt to reproduce the work done in the paper &ldquo;E.T.: Re-Thinking Self-Attention for Transformer Models on GPUs&rdquo;.
       </article>
       
-
     </div>
-    
   </div>
   <h2>Latest Essays</h2>
-      
-      <article>
-        <h5>
-          <a class="no-style resume-link" href="/essays/we-are-very-special/">We are very special!</a
-          ><i><time>July 26, 2025</time></i>
-        </h5>
+  
+  <article>
+    <h5>
+      <a class="no-style resume-link" href="/essays/we-are-very-special/">We are very special!</a
+      ><i><time>July 26, 2025</time></i>
+    </h5>
 
-        This one morning I woke up and suddenly realized how special we are!
-      </article>
-      
-
+    This one morning I woke up and suddenly realized how special we are!
+  </article>
+  
 </div>
 </main>
       <footer>
