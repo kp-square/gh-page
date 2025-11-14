@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
   }
   
-  function changeTheme() {
+  function setTheme() {
     let currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'white') {
+    if (currentTheme === 'light') {
       setWhiteTheme();
-    } {
+    } else {
       setDarkTheme();
     }
   }
-  changeTheme();
+  setTheme();
 });
 
-function setTheme() {
+function changeTheme() {
   let currentTheme = localStorage.getItem("theme");
   if (currentTheme === "light") {
     localStorage.setItem("theme", "dark");
@@ -42,7 +42,6 @@ function setTheme() {
 }
 
 function setWhiteTheme() {
-  console.log('is that you?')
   document.documentElement.style.setProperty("--bg-color", '#ffffff');
   document.documentElement.style.setProperty("--text-color", '#121212');
   document.documentElement.style.setProperty("--accent-color", '#121212');
@@ -58,13 +57,13 @@ function setWhiteTheme() {
     divsToHide[i].style.display = "unset";
   }
 
-  colorTransition();
+  //colorTransition();
 }
 
 function setDarkTheme() {
   document.documentElement.style.setProperty("--bg-color", '#1c202b');
   document.documentElement.style.setProperty("--text-color", '#e0e0ff');
-  document.documentElement.style.setProperty("--accent-color", '#00ffdd');
+  document.documentElement.style.setProperty("--accent-color", '#e42d63');
   document.documentElement.style.setProperty("--card-bg", 'rgba(255, 255, 255, 0.05)');
 
   var divsToHide = document.getElementsByClassName("light-mode");
@@ -76,7 +75,7 @@ function setDarkTheme() {
   for (var i = 0; i < divsToHide.length; i++) {
     divsToHide[i].style.display = "unset";
   }
-  colorTransition();
+  //colorTransition();
 }
 
 function createStars() {
@@ -150,7 +149,7 @@ function colorTransition() {
   updateColor();
 }
 
-colorTransition();
+//colorTransition();
 
 // createStars();
 
