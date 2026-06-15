@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta name="generator" content="Hugo 0.139.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
+	<meta name="generator" content="Hugo 0.131.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    
+    
     <title>Krishna Panthi</title>
+    <meta name="description" content="Krishna Panthi - Software Engineer &amp; MS Computer Science student at Clemson University, working on reinforcement learning, time-series prediction, and diffusion models." />
+
+    <meta property="og:title" content="Krishna Panthi" />
+    <meta property="og:description" content="Krishna Panthi - Software Engineer &amp; MS Computer Science student at Clemson University, working on reinforcement learning, time-series prediction, and diffusion models." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:image" content="http://localhost:1313/images/krishna.webp" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Krishna Panthi" />
+    <meta name="twitter:description" content="Krishna Panthi - Software Engineer &amp; MS Computer Science student at Clemson University, working on reinforcement learning, time-series prediction, and diffusion models." />
+    <meta name="twitter:image" content="http://localhost:1313/images/krishna.webp" />
+
+    <link rel="canonical" href="http://localhost:1313/" />
+    <link rel="icon" href="/images/favicon.ico" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <title>Krishna Panthi - Krishna Panthi</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -23,7 +42,6 @@
     <div class="logo"><img class="logo-img" src="/images/KP.svg" alt="logo">    </div>
     <nav>
         <a href="http://localhost:1313/">Home</a>
-        <a href="http://localhost:1313/essays/">Essays</a>
         <a href="http://localhost:1313/projects/">Projects</a>
     </nav>
     
@@ -50,11 +68,10 @@
 
       
 
-      
       <div class="intro-content">
         <img
           class="profile-photo"
-          src="images/krishna.webp"
+          src="images/krishna_panthi.jpg"
           width="250px"
           height="250px"
         />
@@ -85,63 +102,87 @@
       </div>
 
       <h2>💼 Experience</h2>
+
+      <h3>Research Experience</h3>
       <div class="experience-grid">
         <div class="experience-item">
           <div class="experience-header">
             <a class="no-style" href="http://hydro-informatics-lab.com/"
-              >Clemson University: Graduate Researcher </a
+              >Clemson University: Research Assistant </a
             ><span class="arrow">▶</span>
           </div>
           <div class="experience-content">
             <ul>
               <li>
-                Developed AquaCrop-Richards, a new crop simulation model that
-                integrates the Richards equation into AquaCrop. Implemented a numerical
-                solver for 1-D Richards Equation. It was solved using finite
-                difference method and modified Picard iteration. I also
-                implemented Anderson Acceleration to make it converge in fewer
-                Picard iterations.
+                Developed and optimized AquaCrop-Richards, an open-source crop
+                simulation model that integrates the Richards equation into
+                AquaCrop, implementing a 1-D finite-difference solver with
+                modified Picard iteration and Anderson Acceleration for faster
+                convergence. Verified the implementation with field data,
+                resulting in a peer-reviewed publication.
               </li>
               <li>
-                Implemented deep reinforcement learning methods
-                (PPO, DQN, SLBO) to optimize irrigation to obtain maximum profit
-                using the AquaCrop-Richards as the learning environment.
+                Implemented and compared deep reinforcement learning algorithms
+                (PPO, DQN, SAC) to study how the learning environment affects
+                optimized irrigation policies, using AquaCrop-Richards as the
+                simulation environment &mdash; work submitted as a first-author
+                paper currently under review.
               </li>
               <li>
-                Contribute to implement HydroQuantum Python library to do
-                quantumm machine learning on hydrology related data. The
-                associated paper has been published to Environment Modeling and
+                Contributed to implementing the HydroQuantum Python library to do
+                quantum machine learning on hydrology-related data. The
+                associated paper has been published in Environmental Modelling &amp;
                 Software.
               </li>
               <li>
-                Took lead to create teaching materials that were presented in
-                WaterSoftHack 2025 workshop.
+                Processed and analyzed large-scale graph data (38M+ edges) using
+                Boost C++ to map upstream/downstream connectivity of U.S. river
+                stations across continental flowlines.
+              </li>
+              <li>
+                Took lead to create teaching materials presented at
+                WaterSoftHack 2025, and deployed and managed GPU nodes on an HPC
+                cluster using Kubernetes for WaterSoftHack 2026.
               </li>
             </ul>
           </div>
         </div>
+      </div>
+
+      <h3>Professional Experience</h3>
+      <div class="experience-grid">
         <div class="experience-item">
           <div class="experience-header">
             <a class="no-style" href="https://mutualart.com/"
-              >MutualArt: Full stack Developer</a
+              >MutualArt: Software Engineer</a
             >
             <span class="arrow">▶</span>
           </div>
           <div class="experience-content">
             <ul>
               <li>
-                Developed internal tools for marketing and sales. The work involved developing web applications and background processes. Also
-                implmented algorithms for matching the users with the appropriate
-                consignments.
-              </li>
-              <li>Implemented tools to track emails using pixel tracking.</li>
-              <li>
-                Containerized multiple pre-built applications
-                for faster deployment.
+                Developed, owned, and maintained full-stack applications for
+                communication and sales serving thousands of users worldwide,
+                using Vue.js and .NET Core with SQL Server, GraphQL, Mixpanel,
+                and Elasticsearch.
               </li>
               <li>
-                Got experience with multitude of technologies such as AWS,
-                GraphQL, Mixpanel, .NET, Vue.js, Vuetify, etc.
+                Built a marketing platform for drafting and scheduling
+                mass-email campaigns across continents and time zones, reaching
+                200k+ recipients per event and cutting campaign creation time
+                from hours to minutes.
+              </li>
+              <li>
+                Built image- and PDF-processing workflows using Magick.NET and
+                iTextSharp for art catalogs and invoices.
+              </li>
+              <li>
+                Containerized legacy .NET applications with Docker, reducing
+                deployment time.
+              </li>
+              <li>
+                Implemented pixel-tracking tools to monitor email engagement and
+                wrote unit tests with NUnit to validate business logic.
               </li>
             </ul>
           </div>
@@ -149,23 +190,20 @@
         <div class="experience-item">
           <div class="experience-header">
             <a class="no-style" href="https://pensionpro.com"
-              >Dolphin Dive Technology: Full Stack Developer</a
+              >PensionPro (Dolphin Dive Technology): Software Engineer</a
             ><span class="arrow">▶</span>
           </div>
           <div class="experience-content">
             <ul>
               <li>
-                Involved in development of PensionPro web. Worked as a
-                full stack developer to migrate features from PensionPro desktop
-                application to PensionPro web application.
+                Migrated features from a WPF desktop application to a web
+                application by implementing custom Angular UI components,
+                using Material UI and Telerik to build dashboards and other
+                features.
               </li>
               <li>
-                Worked to build frontend components with Angular and it's
-                material design framework.
-              </li>
-              <li>
-                On the backend side developed API endpoints and
-                optimized stored procedures.
+                Optimized SQL queries and implemented Redis caching to improve
+                data retrieval performance.
               </li>
             </ul>
           </div>
@@ -194,7 +232,6 @@
     <div class="main-col main-col-2">
       <h2>Documents</h2>
       <div class="resume-grid">
-        
         <div class="document">
           <a class="no-style resume-link" href="/pdfs/Krishna_Panthi_Resume.pdf"
             >Resume</a
@@ -202,52 +239,38 @@
         </div>
       </div>
 
-      <h2>Latest Projects</h2>
-      
-      <article>
-        <h5>
-          <a class="no-style resume-link" href="/projects/quality-of-life-analysis-in-san-antonio/"
-            >Quality of Life Analysis in San Antonio</a
-          ><i><time>January 2, 2025</time></i>
-        </h5>
-        This project represents a collaborative effort between the Better Future Institute (BFI) of San Antonio and Clemson University. The primary dataset consisted of 311 non-emergency service requests collected over a 14-month period, which was provided to the research team. This dataset was subsequently enriched with demographic and socio-economic data for San Antonio, sourced from the U.S. Census Bureau, to facilitate a comprehensive analysis.
+      <h2>News</h2>
+
+      <article class="news-item">
+        <span class="news-date nd-blue">May 8, 2026</span>
+        <p>Graduated with M.S. in Computer Science from Clemson University (GPA: 3.9/4.0).</p>
       </article>
-      
-      <article>
-        <h5>
-          <a class="no-style resume-link" href="/projects/gaussian-shading-with-edict/"
-            >Gaussian Shading With EDICT</a
-          ><i><time>December 4, 2024</time></i>
-        </h5>
-        This research implements Exact Diffusion Inversion via Coupled Transformation (EDICT) with the Gaussian Shading watermarking technique in diffusion models. The results show a slight improvement in the performance of Gaussian Shading. The implementation is tested on manipulated images after watermarking, and results in the table below shows better performance for most image manipulation methods, except for ColorJitter and Salt &amp; Pepper Noise. For more details, please refer to our paper.
+
+      <article class="news-item">
+        <span class="news-date nd-green">April 2, 2026</span>
+        <p>Defended M.S. thesis: <a class="resume-link" href="https://www.youtube.com/watch?v=8dUKzq_Ycvw" target="_blank" rel="noopener">"Coupling the Richards Equation with AquaCrop and Deep Reinforcement Learning for Irrigation Scheduling Optimization."</a></p>
       </article>
-      
-      <article>
-        <h5>
-          <a class="no-style resume-link" href="/projects/et-transformer-reproduction/"
-            >Optimized Transformer implementation in GPU</a
-          ><i><time>December 3, 2024</time></i>
-        </h5>
-        In this research, we attempt to reproduce the work done in the paper &ldquo;E.T.: Re-Thinking Self-Attention for Transformer Models on GPUs&rdquo;.
+
+      <article class="news-item">
+        <span class="news-date nd-amber">January 31, 2026</span>
+        <p>Won <strong>Most Viable Product</strong> award at LPL Financial's 2026 Multi-University AI Hackathon (36 teams) for building a RAG-based compliance verification system using AWS Textract, Bedrock, DynamoDB, and Lambda.</p>
       </article>
-      
+
+      <article class="news-item">
+        <span class="news-date nd-purple">January 14, 2026</span>
+        <p>Book chapter accepted in <em>GeoHorizon</em> (co-authored).</p>
+      </article>
+
+      <article class="news-item">
+        <span class="news-date nd-pink">October 8, 2025</span>
+        <p>Paper on quantum machine learning for hydrology published in <em>Environmental Modelling &amp; Software</em> (co-authored).</p>
+      </article>
     </div>
   </div>
-  <h2>Latest Essays</h2>
-  
-  <article>
-    <h5>
-      <a class="no-style resume-link" href="/essays/we-are-very-special/">We are very special!</a
-      ><i><time>July 26, 2025</time></i>
-    </h5>
-
-    This one morning I woke up and suddenly realized how special we are!
-  </article>
-  
 </div>
 </main>
       <footer>
-    <p class="footer-text">&copy; 2025 Krishna Panthi</p>
+    <p class="footer-text">&copy; 2026 Krishna Panthi</p>
 </footer>
     </div>
   </body>

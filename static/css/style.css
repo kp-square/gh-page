@@ -69,6 +69,16 @@ h2 {
   color: var(--accent-color);
 }
 
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
 .intro {
   font-size: 1.2em;
   margin-bottom: 30px;
@@ -334,6 +344,30 @@ p {
   .main-cols {
     flex-direction: column;
   }
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.6rem 0 0.6rem 0.85rem;
+  margin-bottom: 1.1rem;
+  border-left: 2px solid var(--accent-color);
+}
+
+.news-date {
+  font-size: 0.92em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: gray;
+}
+
+
+.news-item p {
+  margin: 0;
+  font-size: 0.88em;
+  line-height: 1.55;
 }
 
 footer {

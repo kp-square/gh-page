@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Krishna Panthi</title>
+
+    {{ $description := "Krishna Panthi - Software Engineer & MS Computer Science student at Clemson University, working on reinforcement learning, time-series prediction, and diffusion models." }}
+    {{ $pageDescription := .Params.description | default $description }}
+    {{ $pageTitle := .Site.Title }}
+    {{ if and .Title (ne .Title .Site.Title) }}{{ $pageTitle = printf "%s - %s" .Title .Site.Title }}{{ end }}
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ $pageDescription }}" />
+
+    <meta property="og:title" content="{{ $pageTitle }}" />
+    <meta property="og:description" content="{{ $pageDescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ "/images/krishna.webp" | absURL }}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ $pageTitle }}" />
+    <meta name="twitter:description" content="{{ $pageDescription }}" />
+    <meta name="twitter:image" content="{{ "/images/krishna.webp" | absURL }}" />
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="icon" href="{{ "/images/favicon.ico" | relURL }}" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
   </head>
   <body>
